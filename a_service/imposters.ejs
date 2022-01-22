@@ -1,0 +1,18 @@
+{
+    "port": "10000",
+    "protocol": "http",
+    "name": "a_service",
+    "stubs": [
+        <% include get_accounts/stubs %>,
+        {
+            "responses": [
+                {
+                    "proxy": {
+                        "to": "https://acm-nano-batch-scheduler-dev.private-a-cloud1n.ascendnano.io",
+                        "mode": "proxyAlways"
+                    }
+                }
+            ]
+        }
+    ]
+}
