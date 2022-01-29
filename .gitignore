@@ -1,0 +1,7 @@
+*.idea
+*.log
+*.iml
+
+mb.pid
+
+.DS_Store

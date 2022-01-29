@@ -1,0 +1,61 @@
+{
+  "status": {
+    "code": "A2000",
+    "message": "Success",
+    "description": "Success"
+  },
+  "data": {
+    "page": {
+      "size": 5,
+      "offset": 0,
+      "total_item": 5
+    },
+    "accounts": [
+      {
+        "id": "1",
+        "state": "Active",
+        "encoded_key": "x_client0001_mock_success",
+        "holder_type": "Client",
+        "holder_key": "x_client0001_mock-success",
+        "product_name": "Credit X",
+        "product_key": "credit-x---1"
+      },
+      {
+        "id": "2",
+        "state": "Active",
+        "encoded_key": "b_client0001_mock_success",
+        "holder_type": "Client",
+        "holder_key": "b_client0001_mock-success",
+        "product_name": "Credit B",
+        "product_key": "credit-b---1"
+      },
+      {
+        "id": "3",
+        "state": "Active",
+        "encoded_key": "a_client0001_mock_success",
+        "holder_type": "Client",
+        "holder_key": "a_client0001_mock-success",
+        "product_name": "Credit A",
+        "product_key": "credit-a---1"
+      },
+      {
+        "id": "4",
+        "state": "Active",
+        "encoded_key": "a_client0002_mock_success",
+        "holder_type": "Client",
+        "holder_key": "a_client0002_mock-success",
+        "product_name": "Credit A",
+        "product_key": "credit-a---1"
+      },
+      {
+        "id": "5",
+        "state": "Active",
+        "encoded_key": "x_client0002_mock_success",
+        "holder_type": "Client",
+        "holder_key": "x_client0002_mock-success",
+        "product_name": "Credit X",
+        "product_key": "credit-x---1"
+      }
+    ]
+  }
+}
