@@ -14,29 +14,29 @@
       {
         "id": "11",
         "state": "Active",
-        "encoded_key": "client0001_mock_success",
+        "encoded_key": "client0011_mock_success",
         "holder_type": "Client",
-        "holder_key": "client0001_mock-success",
-        "product_name": "Credit B",
-        "product_key": "credit-b---1"
+        "holder_key": "client0011_mock-success",
+        "product_name": "Credit X",
+        "product_key": "credit-x---1"
       },
       {
         "id": "12",
         "state": "Active",
-        "encoded_key": "client0001_mock_success",
+        "encoded_key": "client0012_mock_success",
         "holder_type": "Client",
-        "holder_key": "client0001_mock-success",
-        "product_name": "Credit A",
-        "product_key": "credit-a---1"
+        "holder_key": "client0012_mock-success",
+        "product_name": "Credit X",
+        "product_key": "credit-x---1"
       },
       {
         "id": "13",
         "state": "Active",
-        "encoded_key": "client0001_mock_success",
+        "encoded_key": "client0013_mock_success",
         "holder_type": "Client",
-        "holder_key": "client0001_mock-success",
-        "product_name": "Credit A",
-        "product_key": "credit-a---1"
+        "holder_key": "client0013_mock-success",
+        "product_name": "Credit X",
+        "product_key": "credit-x---1"
       }
     ]
   }
