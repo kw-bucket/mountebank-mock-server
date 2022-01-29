@@ -1,5 +1,5 @@
 function f(config) {
     let correlation_id = request.headers['x-correlation-id'];
 
-    return new RegExp('mock_paging(_fail){0,1}').test(correlation_id)
+    return /^mock-paging(-fail)?/.test(correlation_id)
 }

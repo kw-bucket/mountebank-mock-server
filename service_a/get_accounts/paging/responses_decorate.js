@@ -1,11 +1,11 @@
 function f(config) {
     let correlation_id = config.request.headers['x-correlation-id']
 
-    let product = config.request.query.product_code
-    let offset = config.request.query.offset
-    let size = config.request.query.size
+    let product = config.request.query.product
+    let offset = config.request.query.offset || 0
+    let size = config.request.query.size || 50
 
-    let fail = correlation_id.includes('paging_fail')
+    let fail = correlation_id.includes('fail')
 
     const case_decoration = {
         'PRODUCT-A': {
@@ -34,11 +34,11 @@ function f(config) {
         }
     }
 
-    let case_no = correlation_id.split('-')[0]
+    let case_no = correlation_id.split('_')[0]
     let decorator = case_decoration[product][case_no] || case_decoration[product][`${offset}_${size}`]
 
     let home = '.'
-    let response_directory = '/a_service/get_accounts/paging/responses'
+    let response_directory = '/service_a/get_accounts/paging/responses'
     let filename = decorator['body']
 
     const path = require('path')

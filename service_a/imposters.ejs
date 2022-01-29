@@ -1,15 +1,15 @@
 {
     "port": "10000",
-    "protocol": "http",
-    "name": "a_service",
+    "protocol": "https",
+    "name": "service_a",
     "stubs": [
         <% include get_accounts/stubs %>,
         {
             "responses": [
                 {
                     "proxy": {
-                        "to": "https://acm-nano-batch-scheduler-dev.private-a-cloud1n.ascendnano.io",
-                        "mode": "proxyAlways"
+                        "to": "https://jsonplaceholder.typicode.com",
+                        "mode": "proxyTransparent"
                     }
                 }
             ]

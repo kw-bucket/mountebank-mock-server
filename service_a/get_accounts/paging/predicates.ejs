@@ -1,0 +1,15 @@
+[
+    <% include ../endpoint %>,
+    {
+        "equals": { "query": { "status": "ACTIVE" } }
+    },
+    {
+        "or": [
+            { "equals": { "query": { "product": "PRODUCT-A" } } },
+            { "equals": { "query": { "product": "PRODUCT-B" } } }
+        ]
+    },
+    {
+        "inject": "<%- stringify(filename, 'service_a/get_accounts/paging/predicates_inject.js') %>"
+    }
+]
