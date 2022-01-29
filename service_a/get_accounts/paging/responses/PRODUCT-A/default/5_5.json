@@ -6,13 +6,22 @@
   },
   "data": {
     "page": {
-      "size": 50,
-      "offset": 0,
-      "total_item": 1
+      "size": 5,
+      "offset": 5,
+      "total_item": 3
     },
     "accounts": [
       {
-        "id": "11",
+        "id": "6",
+        "state": "Active",
+        "encoded_key": "client0001_mock_success",
+        "holder_type": "Client",
+        "holder_key": "client0001_mock-success",
+        "product_name": "Credit A",
+        "product_key": "credit-a---1"
+      },
+      {
+        "id": "7",
         "state": "Active",
         "encoded_key": "client0001_mock_success",
         "holder_type": "Client",
@@ -21,7 +30,7 @@
         "product_key": "credit-b---1"
       },
       {
-        "id": "12",
+        "id": "8",
         "state": "Active",
         "encoded_key": "client0001_mock_success",
         "holder_type": "Client",

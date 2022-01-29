@@ -3,7 +3,7 @@ function f(config) {
 
     let product = config.request.query.product
     let offset = config.request.query.offset || 0
-    let size = config.request.query.size || 50
+    let size = config.request.query.size || 5
 
     let fail = correlation_id.includes('fail')
 
@@ -13,9 +13,9 @@ function f(config) {
             TC_002: { body: 'TC_002.json' },
             TC_003: { body: 'TC_003.json' },
             TC_00F: { body: '/default/_failed.json', status: 501 },
-            '0_50': { body: '/default/0_50.json' },
-            '50_50': {
-                body: fail ? '/default/_failed.json' : '/default/50_50.json',
+            '0_5': { body: '/default/0_5.json' },
+            '5_5': {
+                body: fail ? '/default/_failed.json' : '/default/5_5.json',
                 status: fail ? 501 : 200
             }
         },
@@ -25,10 +25,10 @@ function f(config) {
             TC_003: { body: 'TC_0003.json' },
             TC_00F: { body: '/default/_failed.json', status: 503},
             TC_Empty: { body: '/default/_empty.json' },
-            '0_50': { body: '/default/0_50.json' },
-            '50_50': { body: '/default/50_50.json' },
-            '100_50': {
-                body: fail ? '/default/_failed.json' : '/default/100_50.json',
+            '0_5': { body: '/default/0_5.json' },
+            '5_5': { body: '/default/5_5.json' },
+            '10_5': {
+                body: fail ? '/default/_failed.json' : '/default/10_5.json',
                 status: fail ? 501 : 200
             },
         }
